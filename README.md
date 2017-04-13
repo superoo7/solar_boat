@@ -1,5 +1,6 @@
-# Using Arduino with Atom Text editor
-## code in c++ and platform.io
+# Using Arduino 
+## Choices of IDE: Arduino IDE, Atom(with platformIO), Eclipse
+
 
 ### Done
 * Detect UltraSonic Distance using [HC-SR04](https://www.amazon.com/SainSmart-HC-SR04-Ranging-Detector-Distance/dp/B004U8TOE6)
@@ -17,7 +18,7 @@ Arduino 2 attaches the compass for the bearing, which is supposedly to be run on
 ### Problem
 * structure of C++ for this project
 * currently we have multiple void setup and void main, so the c++ cannot be executed.
-
+* error handling when sensors failed to display data
 
 ### Reference
 
