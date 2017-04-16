@@ -1,12 +1,6 @@
 #include "Arduino.h"
 #include "ultrasonic.h"
 
-// defines pins numbers
-const uint8_t trigPin =  9;
-const uint8_t echoPin = 10;
-
-
-
 ultrasonicClass::ultrasonicClass() {
 
 }
