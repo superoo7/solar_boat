@@ -6,6 +6,11 @@ class turbidityClass{
     turbidityClass();
     void SETUP();
     void TURBIDITY();
+
+    // variable
+    int turbidityAnalogPin;
+    float turbidityVoltageOutput;
+
 };
 
 extern turbidityClass turbidity;

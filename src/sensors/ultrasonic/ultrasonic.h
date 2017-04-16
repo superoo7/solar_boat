@@ -10,12 +10,12 @@ class ultrasonicClass{
     // defines pins numbers
     // const uint8_t trigPin =  9;
     // const uint8_t echoPin = 10;
-    const int trigPin {9};
-    const int echoPin {10};
+    const int ultraSonicTrigPin {9};
+    const int ultraSonicEchoPin {10};
 
     // defines variables
-    long duration;
-    int distance;
+    long timeTakenToTravel;
+    int distanceTravelled;
 };
 
 extern ultrasonicClass ultrasonic;
