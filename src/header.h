@@ -1,4 +1,8 @@
-#include "Arduino.h"
-#include "sensors/ultrasonic.h"
+#ifndef header
+#define header
 
-void ultraSonic();
+#include "Arduino.h"
+#include "sensors/turbidity/turbidity.h"
+#include "sensors/ultrasonic/ultrasonic.h"
+
+#endif
