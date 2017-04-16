@@ -3,11 +3,13 @@
 
 
 ### Done
+* OOP part done for: _UltraSonic_, _Turbidity_
 * Detect UltraSonic Distance using [HC-SR04](https://www.amazon.com/SainSmart-HC-SR04-Ranging-Detector-Distance/dp/B004U8TOE6)
 * Temperature sensor uses _OneWire.h_ and _DallasTemperature.h_ 
-* Turbidity sensor done
+* Turbidity sensor done [reference](https://www.dfrobot.com/wiki/index.php/Turbidity_sensor_SKU:_SEN0189)
 * pH Sensor done
 * added library
+* Done OOP Object setup
 
 ### reference/leow
 Original file by leow
@@ -16,8 +18,6 @@ Arduino 1 has the GPS module, if you want to test it, test it on the TinyGPS++ "
 Arduino 2 attaches the compass for the bearing, which is supposedly to be run on Autopilot Main file
 
 ### Problem
-* structure of C++ for this project
-* currently we have multiple void setup and void main, so the c++ cannot be executed.
 * error handling when sensors failed to display data
 
 ### Reference
