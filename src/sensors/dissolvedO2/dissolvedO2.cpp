@@ -1,5 +1,3 @@
-// analog output
-#include "Arduino.h"
 #include "dissolvedO2.h"
 
 dissolvedO2Class::dissolvedO2Class(){

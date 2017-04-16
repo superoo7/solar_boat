@@ -1,4 +1,3 @@
-#include "Arduino.h"
 #include "ultrasonic.h"
 
 ultrasonicClass::ultrasonicClass() {

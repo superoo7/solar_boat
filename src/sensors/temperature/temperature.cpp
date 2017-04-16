@@ -1,5 +1,3 @@
-// analog output
-#include "Arduino.h"
 #include "temperature.h"
 
 temperatureClass::temperatureClass(){

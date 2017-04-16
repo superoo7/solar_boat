@@ -1,6 +1,6 @@
-// analog output
-#include "Arduino.h"
 #include "turbidity.h"
+
+// analog output
 
 turbidityClass::turbidityClass(){
 }

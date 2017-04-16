@@ -1,6 +1,9 @@
 #ifndef dissolvedO2_h
 #define dissolvedO2_h
 
+#include "Arduino.h"
+
+
 class dissolvedO2Class{
   public:
     dissolvedO2Class();

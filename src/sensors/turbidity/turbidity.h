@@ -1,6 +1,8 @@
 #ifndef turbidity_h
 #define turbidity_h
 
+#include "Arduino.h"
+
 class turbidityClass{
   public:
     turbidityClass();
