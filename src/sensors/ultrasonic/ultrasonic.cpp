@@ -11,9 +11,7 @@ void ultrasonicClass::SETUP() {
 }
 
 void ultrasonicClass::DISTANCE() {
-  // defines variables
-  long duration;
-  int distance;
+
 
   // Clears the trigPin
   digitalWrite(trigPin, LOW);
