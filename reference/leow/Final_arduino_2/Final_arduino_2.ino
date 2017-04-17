@@ -1,5 +1,5 @@
-//for collecting GPS data and transfering longtitude and lattitude to thingspeak 
-//arduino 2 
+//for collecting GPS data and transfering longtitude and lattitude to thingspeak
+//arduino 2
 
 #include <TinyGPS++.h>
 #include <SoftwareSerial.h>
@@ -7,17 +7,17 @@
 #define USE_WIFI101_SHIELD
 #include <SPI.h>
 #include <WiFi.h>
-char ssid[] = "melvin";    //  your network SSID (name) 
-    char pass[] = "29052012";   // your network password
-    int status = WL_IDLE_STATUS;
-    
-    WiFiClient  client;
-    
-unsigned long myChannelNumber = 179216;
-const char * myWriteAPIKey = "OOIHZJXIQJZE1G4J";
+char ssid[] = "*******";    //  your network SSID (name)
+char pass[] = "*******";   // your network password
+int status = WL_IDLE_STATUS;
+
+WiFiClient  client;
+
+unsigned long myChannelNumber = ******;
+const char * myWriteAPIKey = "******";
 
 static const int RXPin = 2, TXPin = 3;
-float lattitude,longtitude; 
+float lattitude,longtitude;
 static const uint32_t GPSBaud = 9600;
 
 // The TinyGPS++ object
@@ -59,7 +59,7 @@ void loop()
 
 void displayInfo()
 {
-  Serial.print(F("Location: ")); 
+  Serial.print(F("Location: "));
   if (gps.location.isValid())
   {
     Serial.print(gps.location.lat(), 6);
@@ -69,7 +69,7 @@ void displayInfo()
     lattitude=gps.location.lat();
     ThingSpeak.setField(2,longtitude);
     ThingSpeak.setField(3,lattitude);
-    ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey); 
+    ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
   }
   else
   {
