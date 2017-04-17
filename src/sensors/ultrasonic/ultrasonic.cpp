@@ -23,8 +23,6 @@ void ultrasonicClass::DISTANCE() {
   // Calculating the distance
   distanceTravelled = timeTakenToTravel * 0.034 / 2;
   // Prints the distance on the Serial Monitor
-  Serial.print("Distance: ");
-  Serial.println(distanceTravelled);
 
 }
 

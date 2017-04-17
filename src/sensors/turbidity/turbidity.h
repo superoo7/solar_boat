@@ -3,6 +3,9 @@
 
 #include "Arduino.h"
 
+#define TURBIDITYPIN A0
+
+
 class turbidityClass{
   public:
     turbidityClass();

@@ -3,6 +3,10 @@
 
 #include "Arduino.h"
 
+// CONSTANT
+// which analog pin to connect
+#define THERMISTORPIN A1
+
 class temperatureClass{
   public:
     temperatureClass();
@@ -12,8 +16,8 @@ class temperatureClass{
     // constant
 
     // variable
-
-
+    int val;
+    float mv, cel, farh;
 };
 
 extern temperatureClass temperature;
