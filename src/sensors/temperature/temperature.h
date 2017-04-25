@@ -17,6 +17,8 @@ class temperatureClass{
 
     // variable
     int val;
+
+    // make it integer
     float mv, cel, farh;
 };
 

@@ -1,6 +1,11 @@
 # Using Arduino 
 ## Choices of IDE: Arduino IDE, Atom(with platformIO), Eclipse
 
+## ToDo List
+- Jason: LM35 Temperature Sensor
+- Improve the OOP part of the code (maybe use of a template in C++)
+- Check the code for Ultrasonic Avoidance system done by Leo
+- Connect to Thingspeak with WiFi Module
 
 ### Done
 * OOP part done for: _UltraSonic_, _Turbidity_
@@ -22,6 +27,7 @@ Arduino 2 attaches the compass for the bearing, which is supposedly to be run on
 
 ### Problem
 * error handling when sensors failed to display data
+* wifi code has something wrong
 
 ### Reference
 

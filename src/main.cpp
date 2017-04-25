@@ -8,7 +8,7 @@ void setup()
   // ultrasonic.SETUP();
   Serial.begin(9600);
   // temperature.SETUP();
-
+  wifishield.SETUP();
 }
 
 void loop()
