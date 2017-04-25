@@ -19,8 +19,8 @@ source: [instructables](http://www.instructables.com/id/ARDUINO-TEMPERATURE-SENS
 * added library
 * Done OOP Object setup
 
-### reference/leow
-Original file by leow
+### reference/leo
+Original file by leo
 Arduino 1 has the GPS module, if you want to test it, test it on the TinyGPS++ "Full example" first, once it is okay, run the Final Arduino 2 file, that file is to upload the GPS to ThingSpeak
 
 Arduino 2 attaches the compass for the bearing, which is supposedly to be run on Autopilot Main file
