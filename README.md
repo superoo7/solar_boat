@@ -1,5 +1,14 @@
 # Using Arduino 
-## Choices of IDE: Arduino IDE, Atom(with platformIO), Eclipse
+## Choices of IDE: Arduino IDE, Atom(with platformIO)
+
+## For testing:
+we are using arduino UNO for testing and arduino MEGA for real use
+
+in platformio.ini change:
+uno -> megaatmega2560
+
+`board = uno           ;megaatmega2560`
+
 
 ## ToDo List
 - Jason: LM35 Temperature Sensor
