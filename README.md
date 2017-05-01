@@ -37,7 +37,7 @@ Arduino 1 has the GPS module, if you want to test it, test it on the TinyGPS++ "
 Arduino 2 attaches the compass for the bearing, which is supposedly to be run on Autopilot Main file
 
 ### reference/ThingSpeak
-####Thingspeak for testing:
+#### Thingspeak for testing:
 
 ##### UPDATE
 `https://api.thingspeak.com/update?api_key=APIKEYS&field1=1&field2=2&field3=3`
@@ -52,7 +52,7 @@ The thingspeak will return a number that indicates the location/sequence of the 
 * wifi code has something wrong (resolved)
 
 ### License
-read [LICENSE.txt](License.txt)
+read [LICENSE.txt](https://github.com/superoo7/solar-boat/blob/master/LICENSE.txt) (MIT License)
 
 ### Reference
 
