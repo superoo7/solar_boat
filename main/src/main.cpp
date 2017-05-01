@@ -25,10 +25,10 @@ void loop()
 
 }
 
+
 void serialPrintResult()
 {
-  Serial.print("Turbidity: ");
-  Serial.println(turbidity.turbidityVoltageOutput);
+  turbidity.PRINT();
   Serial.print("Distance: ");
   Serial.println(ultrasonic.distanceTravelled);
   Serial.print("Celcius: ");

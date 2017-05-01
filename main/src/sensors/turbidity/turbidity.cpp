@@ -15,4 +15,9 @@ void turbidityClass::TURBIDITY(){
 
 }
 
+void turbidityClass::PRINT(){
+  Serial.print("Turbidity: ");
+  Serial.println(turbidityVoltageOutput);
+}
+
 turbidityClass turbidity = turbidityClass();

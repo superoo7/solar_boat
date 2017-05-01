@@ -11,7 +11,7 @@ class turbidityClass{
     turbidityClass();
     void SETUP();
     void TURBIDITY();
-
+    void PRINT();
     // variable
     int turbidityAnalogPin;
     float turbidityVoltageOutput;
