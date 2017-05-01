@@ -1,8 +1,13 @@
-#include "wifishield.h"
+#include "internet.h"
 
 char ssid[] = "SSID";     //  your network SSID (name)
 char pass[] = "PassWord";   // your network password
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
+WiFiClient  client;
+
+// Thingspeak (Write/Upload)
+unsigned long myChannelNumber = 123;		 /* channel id */
+const char * myWriteAPIKey = "test";		 /* API (write) */
 
 
 wifiShieldClass::wifiShieldClass(){
@@ -23,4 +28,16 @@ void wifiShieldClass::SETUP(){
     else {
       Serial.println("Connected to network");
     }
+}
+
+thingspeakClass::thingspeakClass(){
+
+}
+
+void thingspeakClass::SETUP(){
+  ThingSpeak.begin(client);
+}
+
+void thingspeakClass::update(){
+
 }

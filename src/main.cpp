@@ -9,6 +9,7 @@ void setup()
   Serial.begin(9600);
   temperature.SETUP();
   wifishield.SETUP();
+  thingspeak.SETUP();
 }
 
 void loop()
