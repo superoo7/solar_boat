@@ -20,10 +20,11 @@ uno -> megaatmega2560
 - Jason: LM35 Temperature Sensor
 - Improve the OOP part of the code (maybe use of a template in C++)
 - Check the code for Ultrasonic Avoidance system done by Leo
-- Added ThingSpeak Code into main file
 - Make Serial.println of the data sent to ThingSpeak and put it as an Obj Function
 
+
 ### Done
+* Done ThingSpeak API Setup
 * OOP part done for: _UltraSonic_, _Turbidity_
 * Detect UltraSonic Distance using [HC-SR04](https://www.amazon.com/SainSmart-HC-SR04-Ranging-Detector-Distance/dp/B004U8TOE6)
 * Temperature sensor uses _OneWire.h_ and _DallasTemperature.h_
