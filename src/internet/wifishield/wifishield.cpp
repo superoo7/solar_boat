@@ -1,11 +1,11 @@
 #include "wifishield.h"
 
-char ssid[] = "superoo7";     //  your network SSID (name)
-char pass[] = "johnsonlai";   // your network password
+char ssid[] = "SSID";     //  your network SSID (name)
+char pass[] = "PassWord";   // your network password
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
 
 
-void wifiShieldClass::wifiShieldClass(){
+wifiShieldClass::wifiShieldClass(){
 
 }
 

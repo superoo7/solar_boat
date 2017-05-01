@@ -4,8 +4,8 @@
 #include "Arduino.h"
 #include "sensors/turbidity/turbidity.h"
 #include "internet/wifishield/wifishield.h"
-// #include "sensors/ultrasonic/ultrasonic.h"
-// #include "sensors/temperature/temperature.h"
-// #include "sensors/dissolvedO2/dissolvedO2.h"
+#include "sensors/ultrasonic/ultrasonic.h"
+#include "sensors/temperature/temperature.h"
+#include "sensors/dissolvedO2/dissolvedO2.h"
 
 #endif
