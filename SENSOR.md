@@ -1,8 +1,10 @@
 # SETUP OF THE MICROCONTROLLER
 ## WiFi Shield
-Name: Arduino WiFi Shield
-Pin Used: a shield that attach onto Arduino UNO / MEGA
+**Name**: Arduino WiFi Shield
+**Pin Used**: a shield that attach onto Arduino UNO / MEGA
+
 ![Arduino WiFi Shield](https://www.arduino.cc/en/uploads/Main/ArduinoWifiShield.jpg)
+
 source: [arduino.cc about Arduino WiFi Shield](https://www.arduino.cc/en/Main/ArduinoWiFiShield)
 
 ## Dissolved Oxygen
@@ -10,9 +12,9 @@ source: [arduino.cc about Arduino WiFi Shield](https://www.arduino.cc/en/Main/Ar
 
 ## Temperature
 
-Name: LM35 Temperature Sensor
+**Name**: LM35 Temperature Sensor
 
-Pin Used: Analog A1 (UNO)
+**Pin Used**: Analog A1 (UNO)
 
 We are going to make our own temperature sensor using LM35 which is available in Lab.
 circuit and codes:
@@ -24,11 +26,11 @@ source: [instructables](http://www.instructables.com/id/ARDUINO-TEMPERATURE-SENS
 
 ## Turbidity
 
-Name: Turbidity Sensor SEN0189
+**Name**: Turbidity Sensor SEN0189
 
-Mode: Analog
+**Mode**: Analog
 
-Pin Used: Analog A0 (UNO)
+**Pin Used**: Analog A0 (UNO)
 
 ![Turbidity Sensor](https://www.dfrobot.com/wiki/images/5/59/SEN0189.jpg)
 
@@ -37,9 +39,9 @@ source:
 
 ## UltraSonic sensors
 
-Name: HC-SR04
+**Name**: HC-SR04
 
-Pin Used: 5 sensors is used
+**Pin Used**: 5 sensors is used
 
 | Sonar         | echoPin| trigPin  |
 | ------------- |:------:| --------:|
