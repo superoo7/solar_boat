@@ -14,7 +14,7 @@ uno -> megaatmega2560
 - Jason: LM35 Temperature Sensor
 - Improve the OOP part of the code (maybe use of a template in C++)
 - Check the code for Ultrasonic Avoidance system done by Leo
-- Connect to Thingspeak with WiFi Module
+- Added ThingSpeak Code into main file
 
 ### Done
 * OOP part done for: _UltraSonic_, _Turbidity_
@@ -27,6 +27,7 @@ source: [instructables](http://www.instructables.com/id/ARDUINO-TEMPERATURE-SENS
 * pH Sensor done
 * added library
 * Done OOP Object setup
+* Basic setup of ThingSpeak (update and read) in reference
 
 ### reference/leo
 Original file by leo
@@ -34,9 +35,20 @@ Arduino 1 has the GPS module, if you want to test it, test it on the TinyGPS++ "
 
 Arduino 2 attaches the compass for the bearing, which is supposedly to be run on Autopilot Main file
 
+### reference/ThingSpeak
+####Thingspeak for testing:
+
+##### UPDATE
+`https://api.thingspeak.com/update?api_key=APIKEYS&field1=1&field2=2&field3=3`
+The thingspeak will return a number that indicates the location/sequence of the number
+
+##### READ from public
+`https://thingspeak.com/channels/123456`
+
+
 ### Problem
 * error handling when sensors failed to display data
-* wifi code has something wrong
+* wifi code has something wrong (resolved)
 
 ### Reference
 
@@ -46,6 +58,7 @@ Arduino 2 attaches the compass for the bearing, which is supposedly to be run on
 
 #### Referred Website
 * [UltraSonic HC-SR04 setup](http://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
-
+* [ThingSpeak Arduino setup](http://community.thingspeak.com/tutorials/arduino/send-data-to-thingspeak-with-arduino/)
+* [ThingSpeak GitHub (check example)](https://github.com/mathworks/thingspeak-arduino)
 
 
