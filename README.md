@@ -22,6 +22,7 @@ uno -> megaatmega2560
 * Temperature sensor uses _OneWire.h_ and _DallasTemperature.h_ 
 * Use of temperature sensor LM35. circuit and codes:
 ![LM35](/reference/temperatureLM35/LM35.jpg)
+
 source: [instructables](http://www.instructables.com/id/ARDUINO-TEMPERATURE-SENSOR-LM35/)
 * Turbidity sensor done [reference](https://www.dfrobot.com/wiki/index.php/Turbidity_sensor_SKU:_SEN0189)
 * pH Sensor done
@@ -49,6 +50,9 @@ The thingspeak will return a number that indicates the location/sequence of the 
 ### Problem
 * error handling when sensors failed to display data
 * wifi code has something wrong (resolved)
+
+### License
+read [LICENSE.txt](License.txt)
 
 ### Reference
 
