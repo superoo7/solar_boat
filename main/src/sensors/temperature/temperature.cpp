@@ -13,8 +13,12 @@ void temperatureClass::TEMPERATURE(){
   val = analogRead(THERMISTORPIN);
   float mv = ( val / 1024.0 ) * 5000;
   float cel = mv / 10;
-  float farh = ( cel * 9 ) / 5 + 32;
-  
+
+}
+
+void temperatureClass::PRINT(){
+  Serial.print("Celcius: ");
+  Serial.println(temperature.cel);
 }
 
 temperatureClass temperature = temperatureClass();

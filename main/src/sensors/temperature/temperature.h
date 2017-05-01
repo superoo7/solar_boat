@@ -12,7 +12,7 @@ class temperatureClass{
     temperatureClass();
     void SETUP();
     void TEMPERATURE();
-
+    void PRINT();
     // constant
 
     // variable

@@ -31,10 +31,7 @@ void serialPrintResult()
   turbidity.PRINT();
   Serial.print("Distance: ");
   Serial.println(ultrasonic.distanceTravelled);
-  Serial.print("Celcius: ");
-  Serial.println(temperature.cel);
-  Serial.println("Farenheit: ");
-  Serial.println(temperature.farh);
+  temperature.PRINT();
   Serial.println(" ");
 
 
