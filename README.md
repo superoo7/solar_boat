@@ -1,6 +1,7 @@
 # Solar Boat
 ## Description
 An autonomous boat powered by solar that used Arduino Mega to collect data.
+Setup of microcontroller please check [SENSOR.md](https://github.com/superoo7/solar-boat/blob/master/SENSOR.md)
 
 ## Choices of IDE: Arduino IDE, Atom(with platformIO)
 For making OOP work, if Arduino IDE is used, we need to make all the files into libraries.
@@ -25,13 +26,12 @@ uno -> megaatmega2560
 ### Done
 * OOP part done for: _UltraSonic_, _Turbidity_
 * Detect UltraSonic Distance using [HC-SR04](https://www.amazon.com/SainSmart-HC-SR04-Ranging-Detector-Distance/dp/B004U8TOE6)
-* Temperature sensor uses _OneWire.h_ and _DallasTemperature.h_ 
+* Temperature sensor uses _OneWire.h_ and _DallasTemperature.h_
 * Use of temperature sensor LM35. circuit and codes:
 ![LM35](/reference/temperatureLM35/LM35.jpg)
 
 source: [instructables](http://www.instructables.com/id/ARDUINO-TEMPERATURE-SENSOR-LM35/)
 * Turbidity sensor done [reference](https://www.dfrobot.com/wiki/index.php/Turbidity_sensor_SKU:_SEN0189)
-* pH Sensor done
 * added library
 * Done OOP Object setup
 * Basic setup of ThingSpeak (update and read) in reference
@@ -77,5 +77,3 @@ read [LICENSE.txt](https://github.com/superoo7/solar-boat/blob/master/LICENSE.tx
 * [UltraSonic HC-SR04 setup](http://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
 * [ThingSpeak Arduino setup](http://community.thingspeak.com/tutorials/arduino/send-data-to-thingspeak-with-arduino/)
 * [ThingSpeak GitHub (check example)](https://github.com/mathworks/thingspeak-arduino)
-
-
