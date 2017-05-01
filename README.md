@@ -20,6 +20,7 @@ uno -> megaatmega2560
 - Improve the OOP part of the code (maybe use of a template in C++)
 - Check the code for Ultrasonic Avoidance system done by Leo
 - Added ThingSpeak Code into main file
+- Make Serial.println of the data sent to ThingSpeak and put it as an Obj Function
 
 ### Done
 * OOP part done for: _UltraSonic_, _Turbidity_
