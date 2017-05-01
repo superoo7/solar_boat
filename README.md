@@ -1,5 +1,10 @@
-# Using Arduino 
+# Solar Boat
+## Description
+An autonomous boat powered by solar that used Arduino Mega to collect data.
+
 ## Choices of IDE: Arduino IDE, Atom(with platformIO)
+For making OOP work, if Arduino IDE is used, we need to make all the files into libraries.
+Atom (platformIO) is a preferred method for developing large projects like this.
 
 ## For testing:
 we are using arduino UNO for testing and arduino MEGA for real use
@@ -50,6 +55,13 @@ The thingspeak will return a number that indicates the location/sequence of the 
 ### Problem
 * error handling when sensors failed to display data
 * wifi code has something wrong (resolved)
+
+### Contributors
+* Leo
+* [Lai](superoo7.com)
+* Jason
+* Anis
+* Puteri
 
 ### License
 read [LICENSE.txt](https://github.com/superoo7/solar-boat/blob/master/LICENSE.txt) (MIT License)
