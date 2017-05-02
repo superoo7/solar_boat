@@ -28,7 +28,7 @@ uno -> megaatmega2560
 * OOP part done for: _UltraSonic_, _Turbidity_
 * Detect UltraSonic Distance using [HC-SR04](https://www.amazon.com/SainSmart-HC-SR04-Ranging-Detector-Distance/dp/B004U8TOE6)
 * Temperature sensor uses _OneWire.h_ and _DallasTemperature.h_
-* Use of temperature sensor LM35. circuit and codes:
+* **Tested** Use of temperature sensor LM35. circuit and codes:
 ![LM35](/reference/temperatureLM35/LM35.jpg)
 
 source: [instructables](http://www.instructables.com/id/ARDUINO-TEMPERATURE-SENSOR-LM35/)
@@ -78,3 +78,5 @@ read [LICENSE.txt](https://github.com/superoo7/solar-boat/blob/master/LICENSE.tx
 * [UltraSonic HC-SR04 setup](http://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
 * [ThingSpeak Arduino setup](http://community.thingspeak.com/tutorials/arduino/send-data-to-thingspeak-with-arduino/)
 * [ThingSpeak GitHub (check example)](https://github.com/mathworks/thingspeak-arduino)
+* [GPS Setup visualisation](https://www.youtube.com/watch?v=D20uSl_JHrk)
+

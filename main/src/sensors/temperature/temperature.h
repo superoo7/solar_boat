@@ -19,7 +19,7 @@ class temperatureClass{
     int val;
 
     // make it integer
-    float mv, cel, farh;
+    float mv, cel;
 };
 
 extern temperatureClass temperature;
