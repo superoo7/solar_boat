@@ -13,12 +13,9 @@ class temperatureClass{
     void SETUP();
     void TEMPERATURE();
     void PRINT();
-    // constant
 
-    // variable
+    // variable 
     int val;
-
-    // make it integer
     float mv, cel;
 };
 

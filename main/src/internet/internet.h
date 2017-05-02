@@ -4,8 +4,9 @@
 #include "Arduino.h"
 #include <WiFi.h>
 #include <SPI.h>
-#include "ThingSpeak/ThingSpeak.h"
+#include "ThingSpeak/ThingSpeak.h"          // Library from ThingSpeak
 
+// WiFiShield
 class wifiShieldClass{
   public:
     wifiShieldClass();
@@ -16,7 +17,7 @@ class wifiShieldClass{
 extern wifiShieldClass wifishield;
 
 
-
+// ThingSpeak 
 class thingspeakClass{
   public:
     thingspeakClass();
