@@ -2,7 +2,7 @@
 #define dissolvedO2_h
 
 #include "Arduino.h"
-
+#include "../internet/internet.h"
 
 class dissolvedO2Class{
   public:

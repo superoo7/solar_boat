@@ -1,0 +1,4 @@
+// WiFi (SSID)
+// Password
+// ThingSpeak Channel
+// ThingSpeak API
