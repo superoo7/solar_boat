@@ -60,7 +60,7 @@ The thingspeak will return a number that indicates the location/sequence of the 
 
 ### Contributors
 * Leo
-* [Lai](superoo7.com)
+* [Lai](http://www.superoo7.com)
 * Jason
 * Anis
 * Puteri

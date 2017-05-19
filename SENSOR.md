@@ -43,15 +43,14 @@ source:
 
 **Name**: HC-SR04
 
-**Pin Used**: 5 sensors is used
+**Pin Used**: 3 sensors is used
 
 | Sonar         | echoPin| trigPin  |
 | ------------- |:------:| --------:|
 | Sonar1        | 2      | 3        |
 | Sonar2        | 6      | 7        |
 | Sonar3        | 8      | 9        |
-| Sonar4        | 12     | 13       |
-| Sonar5        | *      | *        |
+
 
 
 ![HC-SR04](https://www.microcontrollerelectronics.com/wp-content/uploads/2014/10/HCSR04.jpg)
