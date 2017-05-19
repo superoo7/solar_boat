@@ -11,6 +11,10 @@ void setup()
 
 void loop()
 {
+  // dissolved oxygen
+  // temperature
+  // turbidity
+
   for(int cnt = 0; cnt <= 40; cnt++) {
     thingspeak.UPDATE(1.1*cnt , 2.2*cnt , 3.3*cnt);
 
