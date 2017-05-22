@@ -53,3 +53,6 @@ void thingspeakClass::UPDATE(float a, float b, float c){
 
 
 }
+
+wifiShieldClass wifishield = wifiShieldClass();
+thingspeakClass thingspeak = thingspeakClass();

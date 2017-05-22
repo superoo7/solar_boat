@@ -8,6 +8,7 @@
 
 // sensors
 #include "parts/temperature/temperature.h"      // LM35 temperature sensor
+#include "parts/ultrasonic/ultrasonic.h"      // LM35 temperature sensor
 
 // motor
 
