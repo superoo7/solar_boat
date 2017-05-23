@@ -3,6 +3,9 @@
 An autonomous boat powered by solar that used Arduino Mega to collect data.
 Setup of microcontroller please check [SENSOR.md](https://github.com/superoo7/solar-boat/blob/master/SENSOR.md)
 
+## C++ short notes
+[Notes.md](https://github.com/superoo7/solar-boat/blob/master/Notes.md)
+
 ## Choices of IDE: Arduino IDE, Atom(with platformIO)
 For making OOP work, if Arduino IDE is used, we need to make all the files into libraries.
 Atom (platformIO) is a preferred method for developing large projects like this.
