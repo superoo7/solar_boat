@@ -39,17 +39,17 @@ void thingspeakClass::SETUP(){
   ThingSpeak.begin(client);
 }
 
-void thingspeakClass::UPDATE(float a, float b, float c){
-    float arr[] = {a,b,c};
+void thingspeakClass::UPDATE(long a, long b, long c){
+    long arr[] = {a,b,c};
 
     for(int cter = 1; cter < 4; cter++) {
       // first value
       ThingSpeak.setField(cter, arr[cter-1]);
-      Serial.println(arr[cter-1]);
+
     }
   // Write the fields that you've set all at once.
   ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
-  Serial.println("Submitted to ThingSpeak");
+
 
 
 }
