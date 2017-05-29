@@ -21,16 +21,13 @@ uno -> megaatmega2560
 
 ## ToDo List
 - Jason: LM35 Temperature Sensor
-- Improve the OOP part of the code (maybe use of a template in C++)
-- Check the code for Ultrasonic Avoidance system done by Leo
-- Make Serial.println of the data sent to ThingSpeak and put it as an Obj Function
+
 
 
 ### Done
 * Done ThingSpeak API Setup
-* OOP part done for: _UltraSonic_, _Turbidity_
+* OOP part done for: _UltraSonic_, _Turbidity_, _Dissolved O2_, _Temperature_
 * Detect UltraSonic Distance using [HC-SR04](https://www.amazon.com/SainSmart-HC-SR04-Ranging-Detector-Distance/dp/B004U8TOE6)
-* Temperature sensor uses _OneWire.h_ and _DallasTemperature.h_
 * **Tested** Use of temperature sensor LM35. circuit and codes:
 ![LM35](/reference/temperatureLM35/LM35.jpg)
 
@@ -57,13 +54,9 @@ The thingspeak will return a number that indicates the location/sequence of the 
 `https://thingspeak.com/channels/123456`
 
 
-### Problem
-* error handling when sensors failed to display data
-* wifi code has something wrong (resolved)
-
 ### Contributors
 * Leo
-* [Lai](http://www.superoo7.com)
+* [Lai](http://www.github.com/superoo7)
 * Jason
 * Anis
 * Puteri
