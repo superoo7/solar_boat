@@ -6,20 +6,22 @@
 
 class dissolvedO2Class{
   public:
-
+    dissolvedO2Class();
     void SETUP();
     float DISSOLVEDO2();
-
+    void serialEvent();
+    void serialEvent3();
     // variables
-    float DO;                                             //used to hold a floating point number that is the DO                                            //used to hold a floating point number that is the DO
-    String sensorstring = "";
-    boolean sensor_string_complete = false;
+
+    String inputstring = "";                              //a string to hold incoming data from the PC
+    String sensorstring = "";                             //a string to hold the data from the Atlas Scientific product
+    boolean input_string_complete = false;                //have we received all the data from the PC
+    boolean sensor_string_complete = false;               //have we received all the data from the Atlas Scientific product
+    float DO;                                             //used to hold a floating point number that is the DO                                           //used to hold a floating point number that is the DO
 
     //function
-    void serialEvent3() {                                 //if the hardware serial port_3 receives a char
-        sensorstring = Serial3.readStringUntil(13);         //read the string until we see a <CR>
-        sensor_string_complete = true;                      //set the flag used to tell if we have received a completed string from the PC
-    }
+
+
 
 
 };

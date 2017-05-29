@@ -12,9 +12,15 @@ void setup()
 
 }
 
+
+
 void loop()
 {
+
+
   // dissolved oxygen
+  dissolvedO2.serialEvent();
+  dissolvedO2.serialEvent3();
   float o2 = dissolvedO2.DISSOLVEDO2();
   // temperature
   float temp = temperature.TEMPERATURE();
@@ -22,14 +28,14 @@ void loop()
   float turb = turbidity.TURBIDITY();
   // ultraSonic
   rightSensor = ultrasonic.rightSensorDistance();
-  Serial.println(rightSensor);
+  // Serial.println(rightSensor);
   leftSensor = ultrasonic.leftSensorDistance();
-  Serial.println(leftSensor);
+  // Serial.println(leftSensor);
   frontSensor = ultrasonic.frontSensorDistance();
-  Serial.println(frontSensor);
+  // Serial.println(frontSensor);
 
   // ultrasonic.avoidanceSystem(rightSensor, leftSensor, frontSensor);
-
+  Serial.println(o2);
   delay(1000);
 
 
