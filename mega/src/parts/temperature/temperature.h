@@ -8,8 +8,8 @@
 
 class temperatureClass{
   public:
-    temperatureClass();
-    void SETUP();
+
+
     float TEMPERATURE();
 
 

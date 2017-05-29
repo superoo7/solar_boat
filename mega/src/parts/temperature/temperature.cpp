@@ -1,12 +1,6 @@
 #include "temperature.h"
 // Temperature Sensor LM35
 
-temperatureClass::temperatureClass(){
-}
-
-void temperatureClass::SETUP(){
-  // empty
-}
 
 float temperatureClass::TEMPERATURE(){
   // void loop()
