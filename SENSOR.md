@@ -8,7 +8,15 @@
 source: [arduino.cc about Arduino WiFi Shield](https://www.arduino.cc/en/Main/ArduinoWiFiShield)
 
 ## Dissolved Oxygen
+**Name**: Part # KIT-103D
 
+**Pin Used**: 
+
+RX(Green): 14
+
+TX(Yellow): 15
+
+Only work on Arduino Mega
 
 source: [dissolved oxygen](https://www.atlas-scientific.com/_files/code/Arduino-Mega-DO-Sample-Code.pdf)
 
