@@ -3,7 +3,8 @@ int thingspeakCounter = 20;
 long rightSensor, leftSensor, frontSensor;
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(9600);       //set baud rate for the hardware serial port_0 to 9600
+  Serial3.begin(9600);      //set baud rate for software serial port_3 to 9600
   wifishield.SETUP();
   thingspeak.SETUP();
   ultrasonic.SETUP();

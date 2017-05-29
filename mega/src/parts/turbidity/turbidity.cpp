@@ -1,5 +1,5 @@
 #include "turbidity.h"
-// Turbidity Sensor LM35
+// Turbidity Sensor SKU: SEN0189
 
 
 float turbidityClass::TURBIDITY(){
