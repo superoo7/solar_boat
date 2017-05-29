@@ -1,13 +1,12 @@
 #include "temperature.h"
 // Temperature Sensor LM35
 
-
+// function will return celcius value
 float temperatureClass::TEMPERATURE(){
   // void loop()
-  val = analogRead(THERMISTORPIN);
-  mv = ( val / 1024.0 ) * 5000;
-  cel = mv / 10;
-  return cel;
+  temperatureValue = analogRead(THERMISTORPIN);
+  mv = ( temperatureValue / 1024.0 ) * 5000;
+  return mv / 10;
 }
 
 

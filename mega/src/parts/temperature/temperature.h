@@ -14,8 +14,8 @@ class temperatureClass{
 
 
     // variable
-    int val;
-    float mv, cel;
+    int temperatureValue;
+    float mv;
 };
 
 extern temperatureClass temperature;

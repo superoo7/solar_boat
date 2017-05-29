@@ -7,13 +7,17 @@ void setup()
   wifishield.SETUP();
   thingspeak.SETUP();
   ultrasonic.SETUP();
+
 }
 
 void loop()
 {
   // dissolved oxygen
   // temperature
+  float temp = temperature.TEMPERATURE();
   // turbidity
+  float turb = turbidity.TURBIDITY();
+  // ultraSonic
   rightSensor = ultrasonic.rightSensorDistance();
   Serial.println(rightSensor);
   leftSensor = ultrasonic.leftSensorDistance();
@@ -28,7 +32,7 @@ void loop()
 
   if (thingspeakCounter > 20) {
   // ThingSpeak will only accept updates every 15 seconds.
-  thingspeak.UPDATE(leftSensor, rightSensor, frontSensor);
+  thingspeak.UPDATE(temp, turb, frontSensor);
   thingspeakCounter = 0;
   Serial.println("submitted to thingspeak!");
   delay(100);
