@@ -16,20 +16,7 @@ void setup()
 
 void loop()
 {
-  // compass
-  compass.COMPASS();
-  float compassX = (float) compass.x;
-  float compassY = (float) compass.y;
-  float compassZ = (float) compass.z;
 
-  // dissolved oxygen
-  dissolvedO2.serialEvent();
-  dissolvedO2.serialEvent3();
-  float o2 = (float) dissolvedO2.DISSOLVEDO2();
-  // temperature
-  float temp = (float) temperature.TEMPERATURE();
-  // turbidity
-  float turb = (float) turbidity.TURBIDITY();
   // ultraSonic
   rightSensor = ultrasonic.rightSensorDistance();
   // Serial.println(rightSensor);
@@ -38,10 +25,6 @@ void loop()
   frontSensor = ultrasonic.frontSensorDistance();
   // Serial.println(frontSensor);
 
-  // GPS
-  float GPSLong = 0;
-  float GPSLat = 0;
-
 
   // ultrasonic.avoidanceSystem(rightSensor, leftSensor, frontSensor);
   Serial.println(o2);
@@ -49,11 +32,30 @@ void loop()
 
 
   if (thingspeakCounter > 20) {
-  // ThingSpeak will only accept updates every 15 seconds.
-  thingspeak.UPDATE(temp, turb, o2, compassX, compassY, compassZ, GPSLong, GPSLat);
-  thingspeakCounter = 0;
-  Serial.println("submitted to thingspeak!");
-  delay(100);
+    // compass
+    compass.COMPASS();
+    float compassX = (float) compass.x;
+    float compassY = (float) compass.y;
+    float compassZ = (float) compass.z;
+
+    // dissolved oxygen
+    dissolvedO2.serialEvent();
+    dissolvedO2.serialEvent3();
+    float o2 = (float) dissolvedO2.DISSOLVEDO2();
+    // temperature
+    float temp = (float) temperature.TEMPERATURE();
+    // turbidity
+    float turb = (float) turbidity.TURBIDITY();
+
+    // GPS
+    float GPSLong = 0;
+    float GPSLat = 0;
+
+    // ThingSpeak will only accept updates every 15 seconds.
+    thingspeak.UPDATE(temp, turb, o2, compassX, compassY, compassZ, GPSLong, GPSLat);
+    thingspeakCounter = 0;
+    Serial.println("submitted to thingspeak!");
+    delay(100);
   } else {
     thingspeakCounter++;
   }

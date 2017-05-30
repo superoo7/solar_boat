@@ -72,9 +72,9 @@ source:
 
 | Sonar         | echoPin| trigPin  |
 | ------------- |:------:| --------:|
-| Sonar1        | 2      | 3        |
-| Sonar2        | 6      | 7        |
-| Sonar3        | 8      | 9        |
+| Sonar1 (Right)        | 2      | 3        |
+| Sonar2 (Left)       | 6      | 7        |
+| Sonar3 (Front)       | 8      | 9        |
 
 
 
