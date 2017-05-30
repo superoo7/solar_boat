@@ -18,27 +18,18 @@ void loop()
 {
   // compass
   compass.COMPASS();
-  int compassX = compass.x;
-  int compassY = compass.y;
-  int compassZ = compass.z;
-  // Show Values
-  Serial.print("X Value: ");
-  Serial.println(compassX);
-  Serial.print("Y Value: ");
-  Serial.println(compassY);
-  Serial.print("Z Value: ");
-  Serial.println(compassZ);
-  Serial.println();
-
+  float compassX = (float) compass.x;
+  float compassY = (float) compass.y;
+  float compassZ = (float) compass.z;
 
   // dissolved oxygen
   dissolvedO2.serialEvent();
   dissolvedO2.serialEvent3();
-  float o2 = dissolvedO2.DISSOLVEDO2();
+  float o2 = (float) dissolvedO2.DISSOLVEDO2();
   // temperature
-  float temp = temperature.TEMPERATURE();
+  float temp = (float) temperature.TEMPERATURE();
   // turbidity
-  float turb = turbidity.TURBIDITY();
+  float turb = (float) turbidity.TURBIDITY();
   // ultraSonic
   rightSensor = ultrasonic.rightSensorDistance();
   // Serial.println(rightSensor);
@@ -47,6 +38,11 @@ void loop()
   frontSensor = ultrasonic.frontSensorDistance();
   // Serial.println(frontSensor);
 
+  // GPS
+  float GPSLong = 0;
+  float GPSLat = 0;
+
+
   // ultrasonic.avoidanceSystem(rightSensor, leftSensor, frontSensor);
   Serial.println(o2);
   delay(1000);
@@ -54,7 +50,7 @@ void loop()
 
   if (thingspeakCounter > 20) {
   // ThingSpeak will only accept updates every 15 seconds.
-  thingspeak.UPDATE(temp, turb, o2);
+  thingspeak.UPDATE(temp, turb, o2, compassX, compassY, compassZ, GPSLong, GPSLat);
   thingspeakCounter = 0;
   Serial.println("submitted to thingspeak!");
   delay(100);

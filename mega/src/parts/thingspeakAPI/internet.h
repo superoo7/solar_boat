@@ -22,7 +22,7 @@ class thingspeakClass{
   public:
     thingspeakClass();
     void SETUP();
-    void UPDATE(long a, long b, long c);
+    void UPDATE(float a, float b, float c, float d, float e, float f, float g, float h);
 };
 
 extern thingspeakClass thingspeak;

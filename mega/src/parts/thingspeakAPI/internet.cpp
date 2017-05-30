@@ -39,13 +39,15 @@ void thingspeakClass::SETUP(){
   ThingSpeak.begin(client);
 }
 
-void thingspeakClass::UPDATE(long a, long b, long c){
-    long arr[] = {a,b,c};
+// a->temp, b->turb, c->o2, d->compassX, e->compassY, f->compassZ, g->GPSLong, h->GPSLat
 
-    for(int cter = 1; cter < 4; cter++) {
+void thingspeakClass::UPDATE(float a, float b, float c, float d, float e, float f, float g, float h){
+    float arr[] = {a,b,c,d,e,f,g,h};
+
+    for(int cter = 1; cter < 8; cter++) {
       // first value
       ThingSpeak.setField(cter, arr[cter-1]);
-
+      Serial.println(arr[cter-1]);
     }
   // Write the fields that you've set all at once.
   ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
