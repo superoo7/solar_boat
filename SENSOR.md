@@ -10,6 +10,12 @@ For this project, we used all 8 fields. (follow the pictures)
 
 ![ThingSpeak Setup](/images/ThingSpeak.png)
 
+Copy __CHANNEL ID__ and __Write API Key__ (in API Keys) and paste it in [mega/src/parts/thingspeakAPI/internet.cpp](https://github.com/superoo7/solar_boat/blob/master/mega/src/parts/thingspeakAPI/internet.cpp) (shown in picture below)
+
+![internet part](/images/Internet.png)
+
+you can update the WiFi part with SSID and Password. (__ONLY WPA/WPA2 only__)
+
 ## WiFi Shield
 **Name**: Arduino WiFi Shield
 **Pin Used**: a shield that attach onto Arduino UNO / MEGA
