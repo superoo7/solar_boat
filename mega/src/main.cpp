@@ -26,12 +26,16 @@ void loop()
   // Serial.println(frontSensor);
 
 
-  // ultrasonic.avoidanceSystem(rightSensor, leftSensor, frontSensor);
-  Serial.println(o2);
+  // avoidanceSystem(rightSensor, leftSensor, frontSensor);
+
   delay(1000);
 
-
+  // every 20 sevonds, update to thingspeak
   if (thingspeakCounter > 20) {
+    // everything is off (motor)
+    // motor off
+
+
     // compass
     compass.COMPASS();
     float compassX = (float) compass.x;
