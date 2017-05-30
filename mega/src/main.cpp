@@ -9,13 +9,26 @@ void setup()
   wifishield.SETUP();
   thingspeak.SETUP();
   ultrasonic.SETUP();
-
+  compass.SETUP();
 }
 
 
 
 void loop()
 {
+  // compass
+  compass.COMPASS();
+  int compassX = compass.x;
+  int compassY = compass.y;
+  int compassZ = compass.z;
+  // Show Values
+  Serial.print("X Value: ");
+  Serial.println(compassX);
+  Serial.print("Y Value: ");
+  Serial.println(compassY);
+  Serial.print("Z Value: ");
+  Serial.println(compassZ);
+  Serial.println();
 
 
   // dissolved oxygen
