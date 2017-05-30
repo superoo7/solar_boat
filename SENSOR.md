@@ -1,4 +1,15 @@
 # SETUP OF THE MICROCONTROLLER
+## THINGSPEAK
+Go to [ThingSpeak.com](http://thingspeak.com), sign up an account.
+
+After log in, Click on __New Channel__
+
+ThingSpeak allows up to 8 fields for free account.
+
+For this project, we used all 8 fields. (follow the pictures)
+
+![ThingSpeak Setup](/images/ThingSpeak.png)
+
 ## WiFi Shield
 **Name**: Arduino WiFi Shield
 **Pin Used**: a shield that attach onto Arduino UNO / MEGA
@@ -68,3 +79,23 @@ source:
 [HC-SR04](https://www.amazon.com/SainSmart-HC-SR04-Ranging-Detector-Distance/dp/B004U8TOE6)
 
 [Deployment of multiple UltraSonic](https://www.youtube.com/watch?v=dSIEuxMHVSI)
+
+## Compass
+![Compass GY-271](https://i2.wp.com/henrysbench.capnfatz.com/wp-content/uploads/2015/09/GY-273-Magnetometer-Pin-Outs.png)
+
+**Name**: Compass GY-271
+
+**Pin Used**: 
+
+* GY-273 Compass Module -> Arduino
+* VCC -> VCC (See Note Below)
+GND -> GND
+* SCL -> A5/SCL, (Use Pin 21 on the Arduino Mega)
+* SDA -> A4/SDA, (Use Pin 20 on the Arduino Mega)
+* DRDY -> Not Connected
+
+reference:
+
+[HMC5883L_Simple](https://github.com/sleemanj/HMC5883L_Simple)
+
+[Source Code](http://henrysbench.capnfatz.com/henrys-bench/arduino-sensors-and-input/arduino-gy-273-hmc5883l-magnetometer-compass-tutorial/)
