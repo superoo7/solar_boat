@@ -1,6 +1,7 @@
 # Solar Boat
 ## Instruction
 in progress: [link](https://www.instructables.com/id/Sensors-and-MicroController-Used/)
+
 ## Description
 An autonomous boat powered by solar that used Arduino Mega to collect data.
 Setup of microcontroller please check [SENSOR.md](https://github.com/superoo7/solar-boat/blob/master/SENSOR.md)
