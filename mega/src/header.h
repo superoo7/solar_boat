@@ -12,6 +12,8 @@
 #include "parts/turbidity/turbidity.h"          // turbidity sensor
 #include "parts/dissolvedO2/dissolvedO2.h"      // dissolvedO2 sensor
 #include "parts/compass/compass.h"              // compass
+#include "parts/GPS/GPS.h"                      // GPS
+
 // motor
 
 #endif

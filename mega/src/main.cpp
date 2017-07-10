@@ -10,6 +10,7 @@ void setup()
   thingspeak.SETUP();
   ultrasonic.SETUP();
   compass.SETUP();
+  GPS.SETUP();
 }
 
 
@@ -26,7 +27,7 @@ void loop()
   // Serial.println(frontSensor);
 
 
-  // avoidanceSystem(rightSensor, leftSensor, frontSensor);
+  // void avoidanceSystem(int rightSensor, int leftSensor, int frontSensor);
 
   delay(1000);
 
@@ -52,8 +53,9 @@ void loop()
     float turb = (float) turbidity.TURBIDITY();
 
     // GPS
-    float GPSLong = 0;
-    float GPSLat = 0;
+    GPS.LOCATION();
+    float GPSLong = GPS.lng;
+    float GPSLat = GPS.lat;
 
     // ThingSpeak will only accept updates every 15 seconds.
     thingspeak.UPDATE(temp, turb, o2, compassX, compassY, compassZ, GPSLong, GPSLat);
