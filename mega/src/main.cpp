@@ -74,14 +74,19 @@ void avoidanceSystem(long right, long left, long front){
 
   if (front <= tresholdDistance && right <= tresholdDistance && left <= tresholdDistance) {
     motors.stop();
+    Serial.println("MOTOR IS STOPPING!!!");
   } else if (front <= tresholdDistance) {
     motors.reverse();
+    Serial.println("MOTOR IS REVERSING");
   } else if (left <= tresholdDistance) {
     motors.right();
+    Serial.println("MOTOR IS TURNING LEFT");
   } else if (right <= tresholdDistance) {
     motors.left();
+    Serial.println("MOTOR IS TURNING RIGHT");
   } else {
     motors.forward();
+    Serial.println("FORWARDING");
   }
 
 

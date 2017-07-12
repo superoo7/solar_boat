@@ -3,8 +3,9 @@
 
 #include "Arduino.h"
 
-const int leftMotorDirection = 22, leftMotor1 = 23, leftMotor2 = 24;
-const int rightMotorDirection = 25, rightMotor1 = 26, rightMotor2 = 27;
+//leftMotorDirection = 0, rightMotorDirection = 0,
+const int leftMotor1 = 7, leftMotor2 = 8;
+const int rightMotor1 = 9, rightMotor2 = 10;
 
 class motorsClass{
   public:
