@@ -1,6 +1,9 @@
 #include "header.h"
 int thingspeakCounter = 20;
 long rightSensor, leftSensor, frontSensor;
+
+void avoidanceSystem(long right, long left, long front);
+
 void setup()
 {
   Serial.begin(9600);       //hardware
@@ -26,7 +29,12 @@ void loop()
   // Serial.println(leftSensor);
   frontSensor = ultrasonic.frontSensorDistance();
   // Serial.println(frontSensor);
-
+  Serial.println("Ultrasonic:");
+  Serial.print(rightSensor);
+  Serial.print(",");
+  Serial.print(leftSensor);
+  Serial.print(",");
+  Serial.println(frontSensor);
 
   void avoidanceSystem(long rightSensor, long leftSensor, long frontSensor);
 
@@ -88,6 +96,4 @@ void avoidanceSystem(long right, long left, long front){
     motors.forward();
     Serial.println("FORWARDING");
   }
-
-
 }

@@ -9,7 +9,7 @@
 #define trigPin2 4
 #define echoPin2 5
 // front
-#define trigPin3 7
+#define trigPin3 46
 #define echoPin3 8
 
 
