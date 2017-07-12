@@ -105,3 +105,15 @@ reference:
 [HMC5883L_Simple](https://github.com/sleemanj/HMC5883L_Simple)
 
 [Source Code](http://henrysbench.capnfatz.com/henrys-bench/arduino-sensors-and-input/arduino-gy-273-hmc5883l-magnetometer-compass-tutorial/)
+
+## GPS
+**Model**: VK2828u7g5lf
+
+**Frequency**: 1Hz
+
+**Pin Used**: 
+* GND -> GND
+* 5V -> 5V
+* RXPin -> 44 (TX)
+* TXPin -> 45 (RX)
+
