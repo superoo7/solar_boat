@@ -15,5 +15,6 @@
 #include "parts/GPS/GPS.h"                      // GPS
 
 // motor
+#include "parts/motors/motors.h"
 
 #endif

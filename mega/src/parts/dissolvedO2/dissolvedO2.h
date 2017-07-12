@@ -21,13 +21,8 @@ class dissolvedO2Class{
 
     //function
 
-
-
-
 };
 
 extern dissolvedO2Class dissolvedO2;
-
-
 
 #endif

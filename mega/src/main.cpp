@@ -11,6 +11,7 @@ void setup()
   ultrasonic.SETUP();
   compass.SETUP();
   GPS.SETUP();
+  motors.SETUP();
 }
 
 
@@ -27,7 +28,7 @@ void loop()
   // Serial.println(frontSensor);
 
 
-  // void avoidanceSystem(int rightSensor, int leftSensor, int frontSensor);
+  void avoidanceSystem(long rightSensor, long leftSensor, long frontSensor);
 
   delay(1000);
 
@@ -65,8 +66,21 @@ void loop()
   } else {
     thingspeakCounter++;
   }
+}
 
 
+void avoidanceSystem(long right, long left, long front){
+  long tresholdDistance = 30;  // 10cm threshold
+
+  if (front <= tresholdDistance) {
+    motors.reverse();
+  } else if (left <= tresholdDistance) {
+    motors.right();
+  } else if (right <= tresholdDistance) {
+    motors.left();
+  } else {
+    motors.forward();
+  }
 
 
 }
