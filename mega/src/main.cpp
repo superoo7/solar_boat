@@ -72,7 +72,9 @@ void loop()
 void avoidanceSystem(long right, long left, long front){
   long tresholdDistance = 30;  // 10cm threshold
 
-  if (front <= tresholdDistance) {
+  if (front <= tresholdDistance && right <= tresholdDistance && left <= tresholdDistance) {
+    motors.stop();
+  } else if (front <= tresholdDistance) {
     motors.reverse();
   } else if (left <= tresholdDistance) {
     motors.right();
