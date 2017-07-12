@@ -45,7 +45,7 @@ void thingspeakClass::UPDATE(float a, float b, float c, float d, float e, float 
     float arr[] = {a,b,c,d,e,f,g,h};
 
     for(int cter = 1; cter <= 8; cter++) {
-      // first value
+      // convert to long since thingspeak API does not take in float data type
       ThingSpeak.setField(cter, (long)arr[cter-1]);
       Serial.println((long)arr[cter-1]);
     }
