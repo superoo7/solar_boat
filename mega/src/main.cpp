@@ -36,7 +36,7 @@ void loop()
   Serial.print(",");
   Serial.println(frontSensor);
 
-  void avoidanceSystem(long rightSensor, long leftSensor, long frontSensor);
+  avoidanceSystem(rightSensor, leftSensor, frontSensor);
 
   delay(1000);
 
@@ -81,7 +81,7 @@ void avoidanceSystem(long right, long left, long front){
   long tresholdDistance = 30;  // 10cm threshold
 
   if (front <= tresholdDistance && right <= tresholdDistance && left <= tresholdDistance) {
-    motors.stop();
+    motors.forward();
     Serial.println("MOTOR IS STOPPING!!!");
   } else if (front <= tresholdDistance) {
     motors.reverse();
