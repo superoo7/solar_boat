@@ -12,6 +12,7 @@ static void smartDelay(unsigned long ms);
 
 void GPSClass::SETUP() {
   ss.begin(GPSBaud);
+  Serial.println("Done setup for GPS");
 }
 
 void GPSClass::LOCATION() {

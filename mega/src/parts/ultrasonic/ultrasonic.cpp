@@ -25,6 +25,7 @@ void ultrasonicClass::SETUP(){
   pinMode(trigPin3, OUTPUT);
   pinMode(echoPin3, INPUT);
 
+  Serial.println("Done setup for ultrasonic");
 
 }
 

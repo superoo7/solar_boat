@@ -11,6 +11,8 @@ void compassClass::SETUP() {
   Wire.write(0x02); // Set the Register
   Wire.write(0x00); // Tell the HMC5883 to Continuously Measure
   Wire.endTransmission();
+
+  Serial.println("Done setup for compass...");
 }
 
 void compassClass::COMPASS() {

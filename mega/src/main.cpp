@@ -7,14 +7,17 @@ void avoidanceSystem(long right, long left, long front);
 void setup()
 {
   Serial.begin(9600);       //hardware
-  Serial3.begin(9600);     //software
+  Serial3.begin(9600);      //software
   dissolvedO2.SETUP();
   wifishield.SETUP();
   thingspeak.SETUP();
   ultrasonic.SETUP();
-  compass.SETUP();
+  // compass.SETUP();
   GPS.SETUP();
   motors.SETUP();
+  motors.stop();
+
+  Serial.println("Done setup");
 }
 
 
@@ -38,7 +41,7 @@ void loop()
 
   avoidanceSystem(rightSensor, leftSensor, frontSensor);
 
-  delay(1000);
+  delay(800);
 
   // every 20 sevonds, update to thingspeak
   if (thingspeakCounter > 20) {
@@ -47,10 +50,13 @@ void loop()
 
 
     // compass
-    compass.COMPASS();
-    float compassX = (float) compass.x;
-    float compassY = (float) compass.y;
-    float compassZ = (float) compass.z;
+    // compass.COMPASS();
+    float compassX = 0;
+    float compassY = 0;
+    float compassZ = 0;
+    // float compassX = (float) compass.x;
+    // float compassY = (float) compass.y;
+    // float compassZ = (float) compass.z;
 
     // dissolved oxygen
     dissolvedO2.serialEvent();
@@ -80,10 +86,7 @@ void loop()
 void avoidanceSystem(long right, long left, long front){
   long tresholdDistance = 30;  // 10cm threshold
 
-  if (front <= tresholdDistance && right <= tresholdDistance && left <= tresholdDistance) {
-    motors.forward();
-    Serial.println("MOTOR IS STOPPING!!!");
-  } else if (front <= tresholdDistance) {
+  if (front <= tresholdDistance) {
     motors.reverse();
     Serial.println("MOTOR IS REVERSING");
   } else if (left <= tresholdDistance) {
