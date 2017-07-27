@@ -1,15 +1,16 @@
 #include "internet.h"
 
 // WiFi
-char ssid[] = "";     //  your network SSID (name)
-char pass[] = "";   // your network password
+char ssid[] = "test";     //  your network SSID (name)
+char pass[] = "adminadmin123";   // your network password
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
 WiFiClient  client;
 
 // ThingSpeak
-unsigned long myChannelNumber = 1;
-const char * myWriteAPIKey = "";
+unsigned long myChannelNumber = 123;
+const char * myWriteAPIKey = "testAPIKey";
 
+// WifiShield
 wifiShieldClass::wifiShieldClass(){
 
 }
@@ -36,7 +37,7 @@ thingspeakClass::thingspeakClass(){
 }
 
 void thingspeakClass::SETUP(){
-  ThingSpeak.begin(client);
+  ThingSpeak.begin(client); // checking connection with thingspeak
 }
 
 // a->temp, b->turb, c->o2, d->compassX, e->compassY, f->compassZ, g->GPSLong, h->GPSLat

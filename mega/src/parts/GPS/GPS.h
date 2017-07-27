@@ -2,19 +2,22 @@
 #define GPS_h
 
 #include <Arduino.h>
-#include "TinyGPS++.h"
+#include "TinyGPS++.h"				// GPS Library
 #include <SoftwareSerial.h>
 
-// Change this! (need pwm)
-// static const int RXPin = 4, TXPin = 3;
+
+// declare pin to use and the baud rate
 static const int RXPin = 44, TXPin = 45;
 static const uint32_t GPSBaud = 9600;
 
+// Declared GPS class (initiate)
 class GPSClass{
 public:
-
+	// function
     void SETUP();
     void LOCATION();
+
+    // variable
     int lng, lat;
 };
 

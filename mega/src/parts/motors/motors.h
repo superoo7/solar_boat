@@ -3,9 +3,10 @@
 
 #include "Arduino.h"
 
-
+// Declared motor class (initiate)
 class motorsClass{
   public:
+  	// function
     void SETUP();
     void stop();
     void forward();

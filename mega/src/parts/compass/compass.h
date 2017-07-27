@@ -5,8 +5,10 @@
 #include <Wire.h> //I2C Arduino Library
 #define addr 0x1E //I2C Address for The HMC5883
 
+// Declared compass class (initiate)
 class compassClass{
 public:
+  // function
   compassClass();
   void SETUP();
   void COMPASS();

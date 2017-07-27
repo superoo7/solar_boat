@@ -1,10 +1,12 @@
+// Header file is used to include all the other sensors file
+
 #ifndef header_h
 #define header_h
 
 #include "Arduino.h"
 
 // internet
-#include "parts/thingspeakAPI/internet.h"
+#include "parts/thingspeakAPI/internet.h"		// WiFi Shield and Thingspeak API
 
 // sensors
 #include "parts/temperature/temperature.h"      // LM35 temperature sensor
@@ -15,6 +17,6 @@
 #include "parts/GPS/GPS.h"                      // GPS
 
 // motor
-#include "parts/motors/motors.h"
+#include "parts/motors/motors.h" 				// motor shield
 
 #endif

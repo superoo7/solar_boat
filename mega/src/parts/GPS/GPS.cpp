@@ -11,16 +11,17 @@ static float printFloat(float val, bool valid, int len, int prec);
 static void smartDelay(unsigned long ms);
 
 void GPSClass::SETUP() {
+  // void setup()
   ss.begin(GPSBaud);
   Serial.println("Done setup for GPS");
 }
 
 void GPSClass::LOCATION() {
-  lat = printFloat(gps.location.lat(), gps.location.isValid(), 11, 6);
-  lng = printFloat(gps.location.lng(), gps.location.isValid(), 12, 6);
+  lat = printFloat(gps.location.lat(), gps.location.isValid(), 11, 6);  // get value of latitude
+  lng = printFloat(gps.location.lng(), gps.location.isValid(), 12, 6);  // get value of longitude
   smartDelay(1000);
 
-  if (millis() > 5000 && gps.charsProcessed() < 10)
+  if (millis() > 5000 && gps.charsProcessed() < 10)                     // if did not reveive GPS signal
     Serial.println(F("No GPS data received: check wiring"));
 
 }
@@ -47,7 +48,8 @@ static float printFloat(float val, bool valid, int len, int prec)
   else
   {
     Serial.print(val, prec);
-    val = val*1000000;
+    val = val*1000000;          
+    // since thingspeak only accept whole number (int/long), so by making 10^6, ensure to keep the precision of the location
     return val;
   }
   smartDelay(0);

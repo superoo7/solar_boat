@@ -6,10 +6,11 @@
 // which analog pin to connect
 #define TURBIDITYPIN A0
 
+// Declared turbidity class (initiate)
 class turbidityClass{
   public:
 
-
+  	// class
     float TURBIDITY();
 
 

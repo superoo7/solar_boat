@@ -13,17 +13,19 @@
 #define echoPin3 8
 
 
-
+// Declared ultrasonic class (initiate)
 class ultrasonicClass{
 public:
-
-    long rightSensor,frontSensor,leftSensor;
-
+	//function
     ultrasonicClass();
     void SETUP();
     long frontSensorDistance();
     long leftSensorDistance();
     long rightSensorDistance();
+
+    // variable
+    long rightSensor,frontSensor,leftSensor;
+
 };
 
 extern ultrasonicClass ultrasonic;
