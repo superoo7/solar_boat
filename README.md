@@ -1,10 +1,15 @@
 # Solar Boat
 ## Instruction
-in progress: [link](https://www.instructables.com/id/Sensors-and-MicroController-Used/)
+[link](https://www.instructables.com/id/Sensors-and-MicroController-Used/)
 
 ## Description
 An autonomous boat powered by solar that used Arduino Mega to collect data.
 Setup of microcontroller please check [SENSOR.md](https://github.com/superoo7/solar-boat/blob/master/SENSOR.md)
+
+
+Video is below
+
+[![vid](https://img.youtube.com/vi/F-L40Tb0cZ8/0.jpg)](https://www.youtube.com/watch?v=F-L40Tb0cZ8)
 
 ## C++ short notes
 [Notes.pdf](https://github.com/superoo7/solar-boat/blob/master/Notes.pdf)
@@ -20,12 +25,6 @@ in platformio.ini change:
 uno -> megaatmega2560
 
 `board = uno           ;megaatmega2560`
-
-
-## ToDo List
-- Jason: LM35 Temperature Sensor
-
-
 
 ### Done
 * Done ThingSpeak API Setup
